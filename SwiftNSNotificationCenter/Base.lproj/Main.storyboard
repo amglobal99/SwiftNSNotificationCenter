@@ -80,7 +80,7 @@
                                     <constraint firstAttribute="width" constant="289" id="EBx-7E-OvN"/>
                                     <constraint firstAttribute="height" constant="104" id="tly-sI-LcI"/>
                                 </constraints>
-                                <string key="text">1. Visit each tab
+                                <string key="text">1. FIRST, Visit each tab 
 2. Tap Notify!
 3. Revisit each tab to see the change.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>

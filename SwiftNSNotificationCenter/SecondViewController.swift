@@ -8,10 +8,23 @@ class SecondViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
         
-		NotificationCenter.default.addObserver(self, selector: #selector(SecondViewController.actOnSpecialNotification), name: NSNotification.Name(rawValue: mySpecialNotificationKey), object: nil)
+        // Add observer here
+		NotificationCenter.default.addObserver(self,
+		                                       selector: #selector(SecondViewController.actOnSpecialNotification),
+		                                       name: NSNotification.Name(rawValue: mySpecialNotificationKey),
+		                                       object: nil)
 	}
 	
 	func actOnSpecialNotification() {
+        print("Second VC: actOnSpecialNotificatin method....")
 		self.notificationLabel.text = "I heard the notification!"
 	}
+    
+    
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    
 }
